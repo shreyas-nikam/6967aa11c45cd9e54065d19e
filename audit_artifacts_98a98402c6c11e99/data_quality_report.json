@@ -1,0 +1,202 @@
+[
+    {
+        "issue_type": "MISSINGNESS",
+        "column": "transaction_id",
+        "metric_value": 0.0,
+        "threshold": 0.05,
+        "status": "PASS",
+        "description": "Column 'transaction_id' has 0.00% missing values."
+    },
+    {
+        "issue_type": "MISSINGNESS",
+        "column": "amount",
+        "metric_value": 0.0,
+        "threshold": 0.05,
+        "status": "PASS",
+        "description": "Column 'amount' has 0.00% missing values."
+    },
+    {
+        "issue_type": "MISSINGNESS",
+        "column": "customer_age",
+        "metric_value": 0.0598019801980198,
+        "threshold": 0.05,
+        "status": "FAIL",
+        "description": "Column 'customer_age' has 5.98% missing values. This exceeds the threshold of 5.00%. High risk of data incompleteness."
+    },
+    {
+        "issue_type": "MISSINGNESS",
+        "column": "customer_gender",
+        "metric_value": 0.0,
+        "threshold": 0.05,
+        "status": "PASS",
+        "description": "Column 'customer_gender' has 0.00% missing values."
+    },
+    {
+        "issue_type": "MISSINGNESS",
+        "column": "customer_region",
+        "metric_value": 0.0,
+        "threshold": 0.05,
+        "status": "PASS",
+        "description": "Column 'customer_region' has 0.00% missing values."
+    },
+    {
+        "issue_type": "MISSINGNESS",
+        "column": "merchant_category",
+        "metric_value": 0.0,
+        "threshold": 0.05,
+        "status": "PASS",
+        "description": "Column 'merchant_category' has 0.00% missing values."
+    },
+    {
+        "issue_type": "MISSINGNESS",
+        "column": "transaction_date",
+        "metric_value": 0.0,
+        "threshold": 0.05,
+        "status": "PASS",
+        "description": "Column 'transaction_date' has 0.00% missing values."
+    },
+    {
+        "issue_type": "MISSINGNESS",
+        "column": "source_system",
+        "metric_value": 0.0,
+        "threshold": 0.05,
+        "status": "PASS",
+        "description": "Column 'source_system' has 0.00% missing values."
+    },
+    {
+        "issue_type": "MISSINGNESS",
+        "column": "ingestion_date",
+        "metric_value": 0.0,
+        "threshold": 0.05,
+        "status": "PASS",
+        "description": "Column 'ingestion_date' has 0.00% missing values."
+    },
+    {
+        "issue_type": "MISSINGNESS",
+        "column": "is_fraud",
+        "metric_value": 0.0,
+        "threshold": 0.05,
+        "status": "PASS",
+        "description": "Column 'is_fraud' has 0.00% missing values."
+    },
+    {
+        "issue_type": "MISSINGNESS",
+        "column": "customer_age_group",
+        "metric_value": 0.0,
+        "threshold": 0.05,
+        "status": "PASS",
+        "description": "Column 'customer_age_group' has 0.00% missing values."
+    },
+    {
+        "issue_type": "DUPLICATES",
+        "column": null,
+        "metric_value": 0.009702970297029703,
+        "threshold": 0.001,
+        "status": "FAIL",
+        "description": "Dataset contains 98 duplicate rows, which is 0.97% of total records. This exceeds the threshold of 0.10%. Potential for biased model training."
+    },
+    {
+        "issue_type": "OUTLIERS",
+        "column": "amount",
+        "metric_value": 0.012772277227722771,
+        "threshold": 0.01,
+        "status": "FAIL",
+        "description": "Column 'amount' has 129 outliers (1.28%) based on IQR multiplier 1.5. Bounds: [-34.84, 235.51]. This exceeds the threshold of 1.00%. Potential for distorted model training."
+    },
+    {
+        "issue_type": "OUTLIERS",
+        "column": "customer_age",
+        "metric_value": 0.0,
+        "threshold": 0.01,
+        "status": "PASS",
+        "description": "Column 'customer_age' has 0 outliers (0.00%) based on IQR multiplier 1.5. Bounds: [-19.00, 125.00]."
+    },
+    {
+        "issue_type": "SCHEMA_DRIFT",
+        "column": "transaction_id",
+        "metric_value": 0.0,
+        "threshold": 0.0,
+        "status": "PASS",
+        "description": "Schema for column 'transaction_id' matches expected type 'object'."
+    },
+    {
+        "issue_type": "SCHEMA_DRIFT",
+        "column": "amount",
+        "metric_value": 0.0,
+        "threshold": 0.0,
+        "status": "PASS",
+        "description": "Schema for column 'amount' matches expected type 'float64'."
+    },
+    {
+        "issue_type": "SCHEMA_DRIFT",
+        "column": "customer_age",
+        "metric_value": 0.0,
+        "threshold": 0.0,
+        "status": "PASS",
+        "description": "Schema for column 'customer_age' matches expected type 'float64'."
+    },
+    {
+        "issue_type": "SCHEMA_DRIFT",
+        "column": "customer_gender",
+        "metric_value": 0.0,
+        "threshold": 0.0,
+        "status": "PASS",
+        "description": "Schema for column 'customer_gender' matches expected type 'object'."
+    },
+    {
+        "issue_type": "SCHEMA_DRIFT",
+        "column": "customer_region",
+        "metric_value": 0.0,
+        "threshold": 0.0,
+        "status": "PASS",
+        "description": "Schema for column 'customer_region' matches expected type 'object'."
+    },
+    {
+        "issue_type": "SCHEMA_DRIFT",
+        "column": "merchant_category",
+        "metric_value": 0.0,
+        "threshold": 0.0,
+        "status": "PASS",
+        "description": "Schema for column 'merchant_category' matches expected type 'object'."
+    },
+    {
+        "issue_type": "SCHEMA_DRIFT",
+        "column": "transaction_date",
+        "metric_value": 0.0,
+        "threshold": 0.0,
+        "status": "PASS",
+        "description": "Schema for column 'transaction_date' matches expected type 'datetime64[ns]'."
+    },
+    {
+        "issue_type": "SCHEMA_DRIFT",
+        "column": "source_system",
+        "metric_value": 0.0,
+        "threshold": 0.0,
+        "status": "PASS",
+        "description": "Schema for column 'source_system' matches expected type 'object'."
+    },
+    {
+        "issue_type": "SCHEMA_DRIFT",
+        "column": "ingestion_date",
+        "metric_value": 0.0,
+        "threshold": 0.0,
+        "status": "PASS",
+        "description": "Schema for column 'ingestion_date' matches expected type 'datetime64[ns]'."
+    },
+    {
+        "issue_type": "SCHEMA_DRIFT",
+        "column": "is_fraud",
+        "metric_value": 0.0,
+        "threshold": 0.0,
+        "status": "PASS",
+        "description": "Schema for column 'is_fraud' matches expected type 'int64'."
+    },
+    {
+        "issue_type": "SCHEMA_DRIFT",
+        "column": "customer_age_group",
+        "metric_value": 0.0,
+        "threshold": 0.0,
+        "status": "PASS",
+        "description": "Schema for column 'customer_age_group' matches expected type 'object'."
+    }
+]

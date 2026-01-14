@@ -1,0 +1,68 @@
+[
+    {
+        "metric_name": "DEMOGRAPHIC_PARITY",
+        "sensitive_attribute": "customer_gender",
+        "group": "Male",
+        "reference_group": "Male",
+        "value": 0.0,
+        "threshold_min": -0.1,
+        "threshold_max": 0.1,
+        "status": "PASS",
+        "interpretation": "Reference group for customer_gender. DPD is 0 by definition."
+    },
+    {
+        "metric_name": "DEMOGRAPHIC_PARITY",
+        "sensitive_attribute": "customer_gender",
+        "group": "Female",
+        "reference_group": "Male",
+        "value": -0.0033530956549758795,
+        "threshold_min": -0.1,
+        "threshold_max": 0.1,
+        "status": "PASS",
+        "interpretation": "The positive outcome rate for 'Female' is 94.45% compared to 94.79% for 'Male'. DPD of -0.003 indicates no significant disparity in positive outcomes."
+    },
+    {
+        "metric_name": "DEMOGRAPHIC_PARITY",
+        "sensitive_attribute": "customer_gender",
+        "group": "Non-Binary",
+        "reference_group": "Male",
+        "value": 0.0063388287389359865,
+        "threshold_min": -0.1,
+        "threshold_max": 0.1,
+        "status": "PASS",
+        "interpretation": "The positive outcome rate for 'Non-Binary' is 95.42% compared to 94.79% for 'Male'. DPD of 0.006 indicates no significant disparity in positive outcomes."
+    },
+    {
+        "metric_name": "DISPARATE_IMPACT",
+        "sensitive_attribute": "customer_gender",
+        "group": "Male",
+        "reference_group": "Male",
+        "value": 1.0,
+        "threshold_min": 0.8,
+        "threshold_max": 1.25,
+        "status": "PASS",
+        "interpretation": "Reference group for customer_gender. DIR is 1 by definition."
+    },
+    {
+        "metric_name": "DISPARATE_IMPACT",
+        "sensitive_attribute": "customer_gender",
+        "group": "Female",
+        "reference_group": "Male",
+        "value": 0.9964625241666479,
+        "threshold_min": 0.8,
+        "threshold_max": 1.25,
+        "status": "PASS",
+        "interpretation": "The positive outcome rate for 'Female' is 94.45% compared to 94.79% for 'Male'. DIR of 0.996 indicates no significant disparity in positive outcomes."
+    },
+    {
+        "metric_name": "DISPARATE_IMPACT",
+        "sensitive_attribute": "customer_gender",
+        "group": "Non-Binary",
+        "reference_group": "Male",
+        "value": 1.0066873885457064,
+        "threshold_min": 0.8,
+        "threshold_max": 1.25,
+        "status": "PASS",
+        "interpretation": "The positive outcome rate for 'Non-Binary' is 95.42% compared to 94.79% for 'Male'. DIR of 1.007 indicates no significant disparity in positive outcomes."
+    }
+]

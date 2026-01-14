@@ -1,0 +1,29 @@
+{
+    "run_id": "978cc7ae-e307-49c7-b0fd-bddf536f9c1e",
+    "generated_at": "2026-01-14T16:53:50.749139Z",
+    "team_or_user": "Sarah Chen (Data Risk Lead)",
+    "app_version": "1.0.0",
+    "inputs_hash": "66e6cbe6b4df7f44c1f6fa2a9ea37f0d4bdd1554d28269194ed4c7afe0b43db1",
+    "outputs_hash": {
+        "data_quality_report.json": "4e6f4ebee76d4dfa4fe85f083c17086167911ba30a04a412a4eac79aa0d93928",
+        "bias_metrics.json": "d19b6b9b807ed9b5d9aced60ab2133efa3cc98ad5532f97452c1aeaa414ee5e3",
+        "case_executive_summary.md": "05c5b574b32f9fe8ab933614d8da6a87845db7a798ce3767afdd8d463f4d5245"
+    },
+    "artifacts": [
+        {
+            "file_name": "data_quality_report.json",
+            "file_hash": "4e6f4ebee76d4dfa4fe85f083c17086167911ba30a04a412a4eac79aa0d93928",
+            "description": "Detailed data quality findings."
+        },
+        {
+            "file_name": "bias_metrics.json",
+            "file_hash": "d19b6b9b807ed9b5d9aced60ab2133efa3cc98ad5532f97452c1aeaa414ee5e3",
+            "description": "Detailed bias assessment results."
+        },
+        {
+            "file_name": "case_executive_summary.md",
+            "file_hash": "05c5b574b32f9fe8ab933614d8da6a87845db7a798ce3767afdd8d463f4d5245",
+            "description": "Consolidated executive summary of audit findings and recommendations."
+        }
+    ]
+}
